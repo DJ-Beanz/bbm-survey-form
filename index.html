@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boston Beanz Media • Client Feedback Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="bbm-header">
+      <!-- change for fcc via github -->
+      <img class="bbm-logo" src="bbm-logo.png" alt="Boston Beanz Media Logo" />
+      <div class="bbm-brand">
+        <span class="bbm-word">Boston</span>
+        <span class="bbm-beanz">Beanz</span> <span class="bbm-word">Media</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- REQUIRED by FCC -->
+      <h1 id="title">Client Feedback Survey</h1>
+      <p id="description">
+        Please help us sharpen our services (or stroke our creative egos) by
+        sharing quick feedback. We appreciate your time!
+      </p>
+      <!-- REQUIRED by FCC -->
+      <form id="survey-form" action="#" method="post" novalidate>
+        <!-- name (required) -->
+        <label id="name-label" for="name">Your name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="e.g., Seymour Buttes"
+          required />
+
+        <!-- email (required, html5 validates format) -->
+        <label id="email-label" for="email">E-mail</label>
+        <input id="email" type="email" placeholder="you@domain.com" required />
+
+        <!-- number (html5 min/max & numeric validation) -->
+        <label id="number-label" for="number"
+          >How many BBM projects have we done together?</label
+        >
+        <input
+          id="number"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="e.g., 3" />
+
+        <!-- dropdown (REQUIRED element) -->
+        <label for="dropdown">How did you hear about Boston Beanz Media?</label>
+        <select id="dropdown" required>
+          <option disabled selected value="">choose one…</option>
+          <option value="DJ-Beanz">DJ Beanz</option>
+          <option value="Web-Search">Web Search</option>
+          <option value="other">Other</option>
+        </select>
+
+        <fieldset>
+          <legend>Would you recommend our work?</legend>
+          <label for="yes"
+            ><input
+              class="inline"
+              id="yes"
+              type="radio"
+              name="recommend"
+              checked />
+            Yes</label
+          >
+          <label for="recommend"
+            ><input class="inline" id="no" type="radio" name="recommend" />
+            No</label
+          >
+        </fieldset>
+
+        <!-- Textarea -->
+        <label for="comments">Additional comments:</label>
+        <textarea
+          id="comments"
+          rows="6"
+          placeholder="Go on. Spill the beanz..."></textarea>
+
+        <!-- Submit Button -->
+        <button id="submit" type="submit">Submit</button>
+      </form>
+      <footer class="bbm-footer">
+        <p>2025 <span class="rude-text">Boston Beanz Media</span>©</p>
+      </footer>
+    </main>
+  </body>
+</html>
