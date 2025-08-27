@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
       rel="stylesheet" />
   </head>
-
   <body>
     <header class="bbm-header">
       <img
@@ -22,7 +21,6 @@
         <span class="bbm-word">Media</span>
       </div>
     </header>
-
     <main class="container">
       <!-- REQUIRED by FCC -->
       <h1 id="title">Client Feedback Survey</h1>
@@ -39,11 +37,9 @@
           type="text"
           placeholder="e.g., Seymour Buttes"
           required />
-
         <!-- email (required, html5 validates format) -->
         <label id="email-label" for="email">E-mail</label>
         <input id="email" type="email" placeholder="you@domain.com" required />
-
         <!-- number (html5 min/max & numeric validation) -->
         <label id="number-label" for="number"
           >How many BBM projects have we done together?</label
@@ -54,7 +50,6 @@
           min="1"
           max="100"
           placeholder="e.g., 3" />
-
         <!-- dropdown (REQUIRED element) -->
         <label for="dropdown">How did you hear about Boston Beanz Media?</label>
         <select id="dropdown" required>
@@ -63,7 +58,6 @@
           <option value="Web-Search">Web Search</option>
           <option value="other">Other</option>
         </select>
-
         <fieldset>
           <legend>Would you recommend our work?</legend>
           <label for="yes"
@@ -80,14 +74,12 @@
             No</label
           >
         </fieldset>
-
         <!-- Textarea -->
         <label for="comments">Additional comments:</label>
         <textarea
           id="comments"
           rows="6"
           placeholder="Go on. Spill the beanz..."></textarea>
-
         <!-- Submit Button -->
         <button id="submit" type="submit">Submit</button>
       </form>
